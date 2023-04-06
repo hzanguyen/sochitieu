@@ -1,0 +1,107 @@
+<html lang="vi">
+    <head>
+        <title>sochitieu</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../css/login.css">
+        <link rel="stylesheet" href="../css/base.css">
+    </head>
+    <body>
+        <div class="modal js-show_register">
+            <div class="modal__body">
+                 <div class="auth-form js-auth-form">  
+                    <div class="auth-form__container">
+                        <div class="auth-form__header">
+                            <h3 class="auth-form__heading">Đăng ký</h3>
+                            <span class="auth-form__switch-btn js-login">Đăng nhập</span>
+                        </div>
+
+                        <div class="auth-form__form">
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input" placeholder="Họ Tên">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="date" class="auth-form__input" placeholder="Ngày Tháng Năm Sinh">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="email" class="auth-form__input" placeholder="Email của bạn">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu">
+                            </div>
+                           
+                        </div>
+                        
+                        <div class="auth-form__aside">
+                            <p>
+                                Bằng việc đăng ký, bạn đã đồng ý với chúng tôi về
+                                <a href="#" class="auth-form__text-link">Điều khoản dịch vụ</a> & 
+                                <a href="#" class="auth-form__text-link">Chính sách bảo mật</a>
+                            </p>
+                        </div>
+                        <div class="auth-form__controls">
+                            <button class="btn btn--normal btn--primary">ĐĂNG KÝ</button>
+                        </div>
+                    </div>
+
+                    <div class="auth-form__socials">
+                        <a href="#" class="auth-form__socials--facebook btn btn--size-s btn--with-icon" id="face">
+                            <i class="auth-form__socials-icon fab fa-facebook-square"></i>
+                            <span class="auth-form__socials-text">Kết nối Facebook</span>
+                        </a>
+                        <a href="#" class="auth-form__socials--google btn btn--size-s btn--with-icon" id="gg">
+                            <i class="auth-form__socials-icon fab fa-google"></i>
+                            <span class="auth-form__socials-text">Kết nối Google</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="modal js-show_login">
+        <div class="modal__body">
+             <div class="auth-form js-auth-form">  
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading ">Đăng nhập</h3>
+                        <span class="auth-form__switch-btn js-register">Đăng ký</span>
+                    </div>
+
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="email" class="auth-form__input" placeholder="Email của bạn" id="emaillogin">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn" id="passlogin">
+                        </div>
+                    </div>
+                    
+                    <div class="auth-form__aside">
+                        <a class="auth-form__policy-text">
+                            Quên mật khẩu
+                            
+                        </a>
+                    </div>
+                    <div class="auth-form__controls">
+                        <button class="btn btn--normal btn--primary" id="btnlogin">ĐĂNG NHẬP</button>
+                    </div>
+                </div>
+
+                <div class="auth-form__socials">
+                    <a href="#" class="auth-form__socials--facebook btn btn--size-s btn--with-icon" id="face">
+                        <i class="auth-form__socials-icon fab fa-facebook-square"></i>
+                        <span class="auth-form__socials-text">Kết nối Facebook</span>
+                    </a>
+                    <a href="#" class="auth-form__socials--google btn btn--size-s btn--with-icon" id="gg">
+                        <i class="auth-form__socials-icon fab fa-google"></i>
+                        <span class="auth-form__socials-text">Kết nối Google</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/login.js"></script>
+    <script src="https://kit.fontawesome.com/22b1ad7ec4.js" crossorigin="anonymous"></script>
+    </body>
+</html>
