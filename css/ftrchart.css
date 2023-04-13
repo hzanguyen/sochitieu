@@ -1,4 +1,6 @@
-
+#content{
+    background-image: url('../image/background.jpg');
+}
 .header-report {
     position: relative;
 }
