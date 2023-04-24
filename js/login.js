@@ -1,14 +1,8 @@
 // modal
 // open modal register  
 
-const modal1 = document.querySelector('.js-show_login')
 const regBtns = document.querySelectorAll('.js-register')
 const modal = document.querySelector('.js-show_register')
-const authForms = document.querySelectorAll('.js-auth-form')
-window.onload= function(){
-    modal1.classList.add('open');
-}
-
 function showModal() {
     modal.classList.add('open')
     modal1.classList.remove('open')
@@ -16,6 +10,23 @@ function showModal() {
 for (const regBtn of regBtns) {
     regBtn.addEventListener('click', showModal)
 }
+
+// close register
+const closeBtn = document.querySelector('.js-close')
+function hideBtn(){
+    modal.classList.remove('open')
+}
+closeBtn.addEventListener('click', hideBtn)
+
+// close when click outward
+const authForms = document.querySelectorAll('.js-auth-form')
+modal.addEventListener('click', hideBtn)
+for (const authForm of authForms ) { 
+    authForm.addEventListener('click', function (event) {
+        event.stopPropagation()
+    })
+}
+
 var tk=document.getElementById("emaillogin")
 var btnLogin=document.querySelector('#btnlogin')
 btnLogin.addEventListener('click',function(){
@@ -30,31 +41,4 @@ btnLogin.addEventListener('click',function(){
 const mk=document.getElementById("passlogin")
 
 
-// close register
-
-
-
-// close when click outward
-
-
-// open modal login 
-const showLogins = document.querySelectorAll('.js-login')
-function showModalLogin() {
-    modal1.classList.add('open')
-    modal.classList.remove('open')
-}
-for (const showLogin of showLogins) {
-    showLogin.addEventListener('click', showModalLogin)
-}
-
-// close Login 
-const closeLoginBtns = document.querySelectorAll('.js-login_close')
-function hideLoginBtn(){
-    modal1.classList.remove('open')
-}
-for (const closeLoginBtn of closeLoginBtns) {
-    closeLoginBtn.addEventListener('click', hideLoginBtn)
-}
-
-// close when click outward
 

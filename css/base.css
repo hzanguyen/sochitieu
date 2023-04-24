@@ -45,7 +45,7 @@ li {
 }
 
 .btn {
-    position: absolute;
+    /* position: absolute; */
     display: inline-block;
     background-color: var(--secondary-color);
     background-size: 200% auto;

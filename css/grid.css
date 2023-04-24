@@ -428,11 +428,11 @@
 }
 
 /* Tablet - PC low resolution */
-@media (min-width: 740px) and (max-width: 1023px) {
+/* @media (min-width: 740px) and (max-width: 1023px) {
     .wide {
         width: 900px;
     }
-}
+} */
 
 /* > PC low resolution */
 @media (min-width: 1024px) and (max-width: 1239px) {
@@ -464,7 +464,7 @@
         display: none;
     }
 
-    .wide .l-1,
+    /* .wide .l-1,
     .wide .l-2,
     .wide .l-2-4,
     .wide .l-3,
@@ -478,7 +478,7 @@
     .wide .l-11,
     .wide .l-12 {
         display: block;
-    }
+    } */
 
     .wide .l-1 {
         flex: 0 0 8.33333%;
