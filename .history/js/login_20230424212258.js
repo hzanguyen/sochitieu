@@ -1,4 +1,5 @@
-
+// modal
+// open modal register  
 
 const regBtns = document.querySelectorAll('.js-register')
 const modal = document.querySelector('.js-show_register')
@@ -26,18 +27,18 @@ for (const authForm of authForms ) {
     })
 }
 
-const tk=document.getElementById("emaillogin")
-const btnLogin=document.querySelector('#btnlogin')
-const mk=document.getElementById("passlogin")
+var tk=document.getElementById("emaillogin")
+var btnLogin=document.querySelector('#btnlogin')
 btnLogin.addEventListener('click',function(){
-    if(tk.value == "1"){
-        if(mk.value == "1")
-            window.location.href=('./index.html')
+    if(tk.value=="1"){
+        if(mk.value=="1")
+            window.location.href="./html"
     } else{
         alert('Sai email')
     }
 })
 
+const mk=document.getElementById("passlogin")
 
 
 
